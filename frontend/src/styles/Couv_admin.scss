@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'coneria_script_demoregular';
+  src: url('./../Assets/demo_coneriascript-webfont.woff2') format('woff2'),
+    url('./../Assets/demo_coneriascript-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.Couv_admin {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  left:10.2%;
+  top: 0rem;
+
+  @include screen(small) {
+    display: none; 
+   
+  }
+
+
+  .container {
+    position: relative;
+    height: 140%;
+    width: 2000px;
+    overflow: hidden;
+    top: 9.7rem;
+    left: 0%;
+    overflow: hidden;
+    transform: translate(0%, -17.5rem);
+    background-image: linear-gradient(-45deg, #053988 0%, #053988 100%);
+    border-radius: 50%;
+    
+    z-index: 126;
+
+    @include screen(small) {
+      display: none;
+  }
+
+
+    img {
+      position: relative;
+      top: 15%;
+      width: 25rem;
+      height: 23rem;
+      left: 18%;
+    }
+
+    .desc {
+      position: relative;
+      top: 17%;
+      left: 1%;
+
+        @include screen(small) {
+            display: none;
+        }
+
+    
+
+      h1 {
+        font-size: calc(3rem + 1vw);
+        position: absolute;
+        top: 7rem;
+        left: 17.8%;
+        color: aliceblue;
+        font-family: 'Prompt', sans-serif;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+        position: absolute;
+        top: 3rem;
+        left: 25%;
+        color: aliceblue;
+        font-family: 'coneria_script_demoregular';
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 5.7px;
+          width: 30px;
+          background: #fff;
+          top: 19.8px;
+          left: 109%;
+          border-radius: 30px;
+          z-index: -1;
+
+      }
+
+      &::before {
+          position: absolute;
+          content: "";
+          height: 4.5px;
+          width: 30px;
+          background: #fff;
+          top: 18px;
+          left: -23%;
+          border-radius: 30px;
+          z-index: -1;
+
+      }
+      }
+    }
+  }
+
+}

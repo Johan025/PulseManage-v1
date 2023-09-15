@@ -1,0 +1,350 @@
+.login_admin {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.form_admin {
+    position: absolute;
+    top: 9.5%;
+    left: 5%;
+     
+    @include screen(small) {
+        left: 0%;
+        top: 8%;
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+     }
+
+    #row1 {
+        margin-top: 1.5rem;
+
+        .title {
+            position: relative;
+            left: 5%;
+
+            @include screen(small) {
+                 left: 0%;
+              }
+
+
+            h2 {
+                color: $primary;
+                margin-right: 14%;
+                font-size: 22.5px;
+                font-weight: bold;
+                font-family: 'Coneria Script Demo', sans-serif;
+
+                @include screen(small) {
+                   margin-right: 4%;
+                 }
+
+                span {
+                    color: blue;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 4px;
+                    width: 30px;
+                    background: $primary;
+                    top: 12px;
+                    left: 63%;
+                    border-radius: 30px;
+                    z-index: 2;
+
+                    @include screen(small) {
+                        left: 67%;
+                     }
+
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 4px;
+                    width: 30px;
+                    background: $primary;
+                    top: 12px;
+                    left: 17%;
+                    border-radius: 30px;
+                    z-index: 2;
+
+                    @include screen(small) {
+                        left: 22%;
+                     }
+
+                }
+            }
+
+            h1 {
+                margin-top: 1rem;
+                font-size: calc(1.4rem + 1.5vw);
+                font-family: 'prompt', 'sans-serif';
+
+                @include screen(small) {
+                    font-size: calc(1.8rem + 1.5vw);
+                 }
+            }
+
+
+            // .f2 {
+            //     width: 1.4rem;
+            //     height: 3.4px;
+            //     background-color: #053988;
+            //     position: relative;
+            //     top: -1.3rem;
+            //     left: 10rem;
+            // }
+        }
+
+    }
+
+    #row2 {
+        
+
+        .formulaire {
+        margin-top: -0.3rem;
+        margin-left: 0%;
+
+         
+        @include screen(small) {
+            // overflow: hidden;
+           
+          }
+
+
+            &_user {
+
+                width: 6.3rem;
+                height: 6.3rem;
+                position: relative;
+                left: 1rem;
+                top: 2rem;
+
+                @include screen(small) {
+                    left: 0rem;
+                   
+                  }
+
+            }
+
+            &_content {
+                display: block;
+                position: relative;
+                top: 5rem;
+                left: 5%;
+                z-index: 55;
+
+                .name {
+
+                    .icone{
+                         position: relative;
+                         right: 1.5rem;
+                         font-size: 19.5px;
+                         color: $primary;
+                    }
+
+                    #name_admin {
+                        border: 0px solid rgb(90, 87, 87);
+                        padding: 1.5rem 1rem 0rem;
+                        // background-color: #d4d4d4;
+                        z-index: 175;
+                        padding: 0.8rem 1rem 1.2rem;
+                        padding-bottom: 0.7rem;
+                        position: relative;
+                        left: -0.7rem;
+                        border-radius: 15px;
+                        /* Coins très arrondis */
+                        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
+                    }
+                }
+
+                .password{
+
+                    @include screen(small) {
+                        margin-top: 1rem;
+                       
+                      }
+
+                    .icone{
+                        position: relative;
+                        right: 1.5rem;
+                        font-size: 19.5px;
+                        color: $primary;
+                        top :1.9rem;
+                   }
+
+                #pasword_admin {
+                    border-radius: 15px;
+                    /* Coins très arrondis */
+                    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
+                    z-index: 55;
+                    border: 0px solid rgb(90, 87, 87);
+                    position: absolute;
+                    // background-color: #d4d4d4;
+                    top: 5rem;
+                    left: 3rem;
+                    padding: 0.8rem 1rem 1.2rem;
+                    padding-bottom: 0.7rem;
+
+                    @include screen(small) {
+                        left: -2%;
+                        top: 2rem;
+                        position: relative;
+                       
+                      }
+                }
+
+            }
+
+                button {
+                    background-color: #053988;
+                    position: relative;
+                    top: 8rem;
+                    left: -1rem;
+                    padding: 0.5rem 5.3rem 0.5rem;
+                    color: #fff;
+                    font-size: 18px;
+
+                    @include screen(small) {
+                        left: -4%;
+                        top: 5.4rem;
+                        position: relative;
+                       
+                      }
+                }
+            }
+        }
+    }
+}
+
+
+//     .form {
+//         position: relative;
+//         top: 2rem;
+//         left: 22%;
+
+//         h1 {
+//             font-family: 'Prompt', sans-serif;
+//         }
+
+//         img {
+//             width: 6rem;
+//             height: 6rem;
+//             position: relative;
+//             left: 7.6rem;
+//             top: 2rem;
+//         }
+
+//         .formulaire {
+//            
+
+// }
+
+// @media screen and (max-width: 567px) {
+//     .form_admin {
+//         position: absolute;
+//         top: 8vh;
+//         width: 100%;
+//         height: 90vh;
+
+//         .logo {
+//             position: relative;
+//             left: 30%;
+//             width: 40%;
+
+//             h2 {
+//                 font-size: 25.5px;
+//                 position: absolute;
+
+//             }
+
+//             .f1 {
+//                 width: 1.4rem;
+//                 height: 3.7px;
+//                 background-color: #053988;
+//                 position: relative;
+//                 top: 1.1rem;
+//                 left: -2rem;
+//             }
+
+//             .f2 {
+//                 width: 1.4rem;
+//                 height: 3.4px;
+//                 background-color: #053988;
+//                 position: relative;
+//                 top: 1rem;
+//                 left: 10rem;
+//             }
+//         }
+
+//         .form {
+//             position: relative;
+//             top: 2rem;
+//             left: 0%;
+
+
+
+
+//             h1 {
+//                 font-family: 'Prompt', sans-serif;
+//                 margin-left: 2%;
+//                 margin-top: 0.5rem;
+//                 font-size: 38px;
+
+
+//             }
+
+//             img {
+//                 width: 6rem;
+//                 height: 6rem;
+//                 position: relative;
+//                 left: 2%;
+//                 top: 2rem;
+//             }
+
+//             .formulaire {
+//                 margin-top: -0.5rem;
+//                 margin-left: -6.5%;
+//                 z-index: 55;
+//                 width: 99%;
+
+//                 #name_admin {
+//                     border-radius: 12px;
+//                     border: 0px solid rgb(90, 87, 87);
+//                     padding: 1.5rem 1rem 0rem;
+//                     background-color: #d4d4d4;
+//                     z-index: 175;
+//                     padding: 0.8rem 1rem 1.2rem;
+//                     padding-bottom: 0.7rem;
+//                 }
+
+//                 #pasword_admin {
+//                     border-radius: 12px;
+//                     z-index: 55;
+//                     border: 0px solid rgb(90, 87, 87);
+//                     position: relative;
+//                     background-color: #d4d4d4;
+//                     top: 4rem;
+//                     left: 0rem;
+//                     padding: 0.8rem 1rem 1.2rem;
+//                     padding-bottom: 0.7rem;
+//                 }
+
+//                 button {
+//                     background-color: #053988;
+//                     position: relative;
+//                     top: 7.5rem;
+//                     left: 2%;
+//                     padding: 0.5rem 2rem 0.5rem;
+//                     color: #fff;
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+
+//     }
