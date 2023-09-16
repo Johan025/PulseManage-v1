@@ -1,5 +1,5 @@
 import React from "react";
-import couv from "./../../Assets/admin-panel.png";
+import couv from "./../../Assets/bg.png";
 import Typewriter, { TypewriterClass } from "typewriter-effect";
 
 const Couv = () => {
