@@ -3,9 +3,11 @@ import logo from "./../../Assets/p1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const Form_admin: React.FC = () => {
+  const navigate = useNavigate();
    const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
@@ -31,6 +33,7 @@ const Form_admin: React.FC = () => {
       .then(res=>{
               if((res.data=="valid")){
                   //history("/home",{state:{id:email}})
+                  navigate("/adminPanel");
                   alert ('Bienvenue administrateur')
                //   history('./Home.jsx');
               }
@@ -39,7 +42,7 @@ const Form_admin: React.FC = () => {
               }
           })
           .catch(e=>{
-              alert("Le serveur node n' est pas démarré")
+              alert("Le serveur node n' est pas démarré");
               console.log(e);
           })
 

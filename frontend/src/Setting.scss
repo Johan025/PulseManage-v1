@@ -1,4 +1,5 @@
 $primary: #146CDF;
+$color1: #fff;
 
 @mixin screen($breakpoint) {
     @if $breakpoint == small {
