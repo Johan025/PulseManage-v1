@@ -124,14 +124,26 @@
         #sidebar {
             position: fixed;
             z-index: 55;
+            overflow: hidden;
             overflow-y: hidden;
-            overflow-x: hidden;
             top: 4.5rem;
             left: 0;
             width: 276.5px;
             height: 100vh;
             background-color: rgb(255, 255, 255);
             border-top-right-radius: 32px;
+
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: 0.2px;
+                scrollbar-width: thin;
+              }
+              
+              ::-webkit-scrollbar-thumb {
+                scrollbar-color: rgba(53, 44, 44, 0.555);
+                width: 7px;
+                border-radius: 10px;
+              }
 
            
 
@@ -154,8 +166,8 @@
 
                     img {
                         transform: rotate(45deg);
-                        width: 84.5px;
-                        height: 84.5px;
+                        width: 88.8px;
+                        height: 88.8px;
                         border-radius: 50%;
 
                     }
@@ -254,24 +266,23 @@
                 width: 100%;
                 position: relative;
                 top: 0rem;
-                overflow-y: auto;
-                overflow-x: hidden;
-                height: 155vh;
+                overflow: auto;
+                height: 52vh;
 
+              
                 &::-webkit-scrollbar {
                     background-color: transparent;
-                    width: 3px;
+                    width: 2px;
                     scrollbar-width: thin;
-                    position: absolute;
-                    right: 9rem;
                   }
                   
                   ::-webkit-scrollbar-thumb {
                     scrollbar-color: rgba(53, 44, 44, 0.555);
-                    width: 6px;
+                    width: 7px;
                     border-radius: 10px;
                   }
-
+    
+               
                     ul{
                         margin-top: 1rem;
                         margin-left: -2rem;
@@ -292,8 +303,8 @@
                                 border-right: 0;
                                 border-top: 0;
                                 border-bottom: 0;
-                                border-top-left-radius: 22px;
-                                border-bottom-left-radius: 22px;
+                                border-top-left-radius: 24px;
+                                border-bottom-left-radius: 24px;
                                }
 
                              .icon{
@@ -310,8 +321,8 @@
                           .active{
                             background-color: $primary;
                             color: $color1;
-                            border-top-left-radius: 22px;
-                            border-bottom-left-radius: 22px;
+                            border-top-left-radius: 24px;
+                            border-bottom-left-radius: 24px;
                           }
                     }
             }
