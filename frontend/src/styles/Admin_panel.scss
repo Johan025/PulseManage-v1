@@ -54,6 +54,7 @@
                         font-size: 17px;
                         color: #fff;
                         margin-top: 0.1rem;
+                        font-weight: bold;
 
                     }
 
@@ -73,7 +74,7 @@
 
                 .notification {
 
-                    .count{
+                    .count {
                         width: 18px;
                         height: 20.6px;
                         padding: 1px;
@@ -84,7 +85,7 @@
                         padding-bottom: 8px;
                         border-radius: 50%;
                         font-size: 13px;
-                        background-color: rgb(184, 224, 5);
+                        background-color: rgb(217, 250, 28);
                     }
 
                     .icone {
@@ -116,19 +117,180 @@
     .main-container {
         position: relative;
         top: 38rem;
-        padding: 0 0 0 247px;
+        padding: 0 0 0 275px;
 
 
 
         #sidebar {
             position: fixed;
             z-index: 55;
+            overflow-y: auto;
+            overflow-x: hidden;
             top: 4.5rem;
             left: 0;
-            width: 246.5px;
+            width: 276.5px;
             height: 100vh;
             background-color: rgb(255, 255, 255);
             border-top-right-radius: 32px;
+
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: 0px;
+                scrollbar-width: thin;
+                position: absolute;
+                right: 9rem;
+              }
+              
+              ::-webkit-scrollbar-thumb {
+                scrollbar-color: rgba(53, 44, 44, 0.555);
+                width: 6px;
+                border-radius: 10px;
+              }
+
+            .profil {
+                width: 100%;
+                height: 16.5rem;
+                box-shadow: 0 4px 15px rgba(43, 42, 42, 0.158);
+                padding-top: 1rem;
+
+                &_image {
+
+                    border-radius: 100%;
+                    width: 40%;
+                    padding: 5px 0;
+                    transform: rotate(-45deg);
+                    height: 106px;
+                    margin: auto;
+                    border: 4px solid $primary;
+                    border-top-color: transparent;
+
+                    img {
+                        transform: rotate(45deg);
+                        width: 84.5px;
+                        height: 84.5px;
+                        border-radius: 50%;
+
+                    }
+                }
+
+                &_contents {
+                    position: relative;
+                    top: 1rem;
+
+                    h1 {
+                        color: $primary;
+                        margin-right: 3%;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-family: 'Coneria Script Demo', sans-serif;
+
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            height: 3px;
+                            width: 20px;
+                            background: $primary;
+                            top: 7px;
+                            left: 69%;
+                            border-radius: 30px;
+                            z-index: 2;
+
+
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            height: 3px;
+                            width: 20px;
+                            background: $primary;
+                            top: 7px;
+                            left: 20%;
+                            border-radius: 30px;
+                            z-index: 2;
+
+                        }
+
+
+
+
+                    }
+
+                    h2{
+                        font-size: 18.5px;
+                        margin-left: -0.5rem;
+                        font-weight: bold;
+                        color: #272626;
+                    }
+                }
+
+                &_icons{
+                    position: relative;
+                    top: 1.5rem;
+                    left: -0.3rem;
+
+                    .icone{
+                        font-size: 18.5px;
+                        margin-left: 0.6rem;
+                        color: #fff;
+                        padding: 11.5px;
+                        padding-left: 1.3rem;
+                        padding-right: 1.3rem;
+                        border-radius: 4px;
+
+                          &:nth-child(1){
+                            background-color: rgba(247, 202, 0, 0.747);
+                          }
+
+                          &:nth-child(2){
+                            background-color: rgba(58, 247, 0, 0.747);
+                          }
+                          &:nth-child(3){
+                            background-color: rgb(0, 140, 255);
+                          }
+                    }
+
+                }
+
+                .border1 {
+                    width: 100%;
+                    height: 1px;
+                    position: relative;
+                    top: 13.7rem;
+                    background-color: rgba(0, 0, 0, 0.151);
+                }
+            }
+
+            .sidebar_content{
+                width: 100%;
+                position: relative;
+                top: 0rem;
+                overflow: auto;
+                height: 65vh;
+
+                    ul{
+                        margin-top: 1.7rem;
+                        margin-left: 0rem;
+                        position: relative;
+
+                          li{
+                            margin-top: 1.8rem;
+                            display: flex;
+
+                            // .icon{
+                            //     position: relative;
+                            //     left: -7.6rem;
+                            //     font-size: 22px;
+                            // }
+
+                              h1{
+                                font-size: 16px;
+                                margin-left: 1rem;
+                              }
+                          }
+                    }
+            }
         }
 
 

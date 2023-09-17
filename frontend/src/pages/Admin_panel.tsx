@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { faGauge } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import admin from "./../Assets/pdp.jpg";
 
 const Admin_panel = () => {
@@ -38,7 +42,37 @@ const Admin_panel = () => {
 
       <div className="main-container">
         <div className="sidebar-wrapper" id="sidebar">
-          <div className="container"></div>
+               <div className="profil text-center">
+                     <div className="profil_image">
+                         <img src={admin} alt="" />
+                     </div>
+
+                     <div className="profil_contents">
+                          <h1>PulseManage</h1>
+                          <h2>Administrateur</h2>
+                     </div>
+
+                     <div className="profil_icons">
+                     <FontAwesomeIcon icon={faCalendar} className="icone" />
+                     <FontAwesomeIcon icon={faBullhorn} className="icone" />
+                     <FontAwesomeIcon icon={faComment} className="icone" />
+                     
+                     </div>
+
+               </div>
+
+               <div className="sidebar_content text-start">
+                   <ul>
+                      <li><FontAwesomeIcon icon={faGauge} className="icon" /> <h1> Dashboard</h1></li>
+                      <li><FontAwesomeIcon icon={faUsers} className="icon" /> <h1>Liste employés</h1></li>
+                      <li><FontAwesomeIcon icon={faGauge} className="icon" /> <h1>Ajouter des employés</h1></li>
+                      <li><FontAwesomeIcon icon={faGauge} className="icon" /> <h1>Gestion de Stock</h1></li>
+                      <li><FontAwesomeIcon icon={faGauge} className="icon" /> <h1>Annonces</h1></li>
+                      <li><FontAwesomeIcon icon={faGauge} className="icon" /> <h1>Emplois du temps</h1></li>
+                      <li></li>
+                   </ul>
+
+               </div>
         </div>
 
         <div className="app-container">
@@ -48,25 +82,25 @@ const Admin_panel = () => {
                 <div className="col-3">
                   <div className="gag">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima voluptates ut
+                   
+                  </div>
+                </div>
+                <div className="col-3">
+                  <div className="gag">
+                    rem ipsum dolor sit amet consectetur adipisicing eli
+                    
                   </div>
                 </div>
                 <div className="col-3">
                   <div className="gag">
                     rem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima voluptates ut
+                 
                   </div>
                 </div>
                 <div className="col-3">
                   <div className="gag">
                     rem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima voluptates ut
-                  </div>
-                </div>
-                <div className="col-3">
-                  <div className="gag">
-                    rem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima voluptates ut
+                    
                   </div>
                 </div>
               </div>
@@ -79,3 +113,5 @@ const Admin_panel = () => {
 };
 
 export default Admin_panel;
+
+

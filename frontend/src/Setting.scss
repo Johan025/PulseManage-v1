@@ -18,3 +18,23 @@ $color1: #fff;
       }
     }
   }
+
+  *{
+    font-family: 'Mooli';
+    list-style: none;
+    text-decoration: none;
+
+  }
+
+  html::-webkit-scrollbar {
+    background-color: white;
+    width: 7px;
+    scrollbar-width: thin;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 44, 44, 0.555);
+    height: -5px;
+    width: 6px;
+    border-radius: 10px;
+  }
