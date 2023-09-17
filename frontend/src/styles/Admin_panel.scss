@@ -124,7 +124,7 @@
         #sidebar {
             position: fixed;
             z-index: 55;
-            overflow-y: auto;
+            overflow-y: hidden;
             overflow-x: hidden;
             top: 4.5rem;
             left: 0;
@@ -133,19 +133,7 @@
             background-color: rgb(255, 255, 255);
             border-top-right-radius: 32px;
 
-            &::-webkit-scrollbar {
-                background-color: transparent;
-                width: 0px;
-                scrollbar-width: thin;
-                position: absolute;
-                right: 9rem;
-              }
-              
-              ::-webkit-scrollbar-thumb {
-                scrollbar-color: rgba(53, 44, 44, 0.555);
-                width: 6px;
-                border-radius: 10px;
-              }
+           
 
             .profil {
                 width: 100%;
@@ -266,28 +254,64 @@
                 width: 100%;
                 position: relative;
                 top: 0rem;
-                overflow: auto;
-                height: 65vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+                height: 155vh;
+
+                &::-webkit-scrollbar {
+                    background-color: transparent;
+                    width: 3px;
+                    scrollbar-width: thin;
+                    position: absolute;
+                    right: 9rem;
+                  }
+                  
+                  ::-webkit-scrollbar-thumb {
+                    scrollbar-color: rgba(53, 44, 44, 0.555);
+                    width: 6px;
+                    border-radius: 10px;
+                  }
 
                     ul{
-                        margin-top: 1.7rem;
-                        margin-left: 0rem;
+                        margin-top: 1rem;
+                        margin-left: -2rem;
                         position: relative;
 
                           li{
-                            margin-top: 1.8rem;
+                            margin-top: 0.6rem;
+                            cursor: pointer;
                             display: flex;
+                            padding-top: 1rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 1.65rem;
 
-                            // .icon{
-                            //     position: relative;
-                            //     left: -7.6rem;
-                            //     font-size: 22px;
-                            // }
+                               &:hover{
+                                background-color: $primary;
+                                border-left: 6px $primary;
+                                color: #fff;
+                                border-right: 0;
+                                border-top: 0;
+                                border-bottom: 0;
+                                border-top-left-radius: 22px;
+                                border-bottom-left-radius: 22px;
+                               }
+
+                             .icon{
+                                font-size: 24px;
+                            }
 
                               h1{
-                                font-size: 16px;
-                                margin-left: 1rem;
+                                font-size: 17.5px;
+                                margin-left: 1.6rem;
+                                margin-top: 0.1rem;
                               }
+                          }
+
+                          .active{
+                            background-color: $primary;
+                            color: $color1;
+                            border-top-left-radius: 22px;
+                            border-bottom-left-radius: 22px;
                           }
                     }
             }
