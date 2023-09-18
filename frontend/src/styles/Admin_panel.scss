@@ -126,6 +126,8 @@
             z-index: 55;
             overflow: hidden;
             overflow-y: hidden;
+            -webkit-transition: left .3s ease,width .3s ease;
+            transition: left .3s ease,width .3s ease;
             top: 4.5rem;
             left: 0;
             width: 276.5px;

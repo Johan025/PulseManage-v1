@@ -33,8 +33,8 @@ const Form_admin: React.FC = () => {
       .then(res=>{
               if((res.data=="valid")){
                   //history("/home",{state:{id:email}})
-                  navigate("/adminPanel");
-                  alert ('Bienvenue administrateur')
+                  navigate("/adminDashboard");
+        
                //   history('./Home.jsx');
               }
               else if((res.data=="novalid")){
