@@ -28,7 +28,7 @@ const Dashboard_body: React.FC = () => {
     labels: labels,
     datasets: [
       {
-        label: "Expenses by Month",
+        label: "70-",
         data: [65, 59, 80, 81, 56, 84],
         backgroundColor: ["#7327a5","#7327a5","#146CDF","#146CDF","#7327a5","#146CDF"],
         borderColor: ["#146cdf00"],
@@ -40,7 +40,7 @@ const Dashboard_body: React.FC = () => {
 
   const [data1, setData1] = useState({
     labels: [
-      'Red',
+      'Tech lead',
       'Blue',
       'Yellow'
     ],
