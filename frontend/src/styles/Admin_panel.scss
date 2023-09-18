@@ -338,6 +338,26 @@
             top: -33.4rem;
             padding: 0;
 
+            .navigation_1{
+                 position: fixed;
+                 top: 5.7rem;
+                 left: 18.2rem;
+                 z-index: 35;
+
+                  .icon{
+                    color: $color1;
+                    font-size: 19px;
+                    font-weight: bold;
+                  }
+
+                   h1{
+                    font-size: 17px;
+                    margin-left: .6rem;
+                    color: $color1;
+                    font-weight: bold;
+                   }
+            }
+
 
             .navigation {
                 position: fixed;

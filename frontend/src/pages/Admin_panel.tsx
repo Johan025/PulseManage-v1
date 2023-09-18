@@ -10,6 +10,7 @@ import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faBox } from "@fortawesome/free-solid-svg-icons";
 import { faSitemap } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import admin from "./../Assets/pdp.jpg";
 
 const Admin_panel = () => {
@@ -94,6 +95,15 @@ const Admin_panel = () => {
         </div>
 
         <div className="app-container">
+          <div className="navigation_1 d-flex">
+                <div className="home d-flex">
+                <FontAwesomeIcon icon={faHome} className="icon" />
+                <h1>Accueil</h1>
+                </div>
+                <div className="linkto">
+                    <h1>&gt; Dashboard</h1>
+                </div>
+          </div>
           <div className="navigation">
             <div className="container">
               <div className="row gx-3">
