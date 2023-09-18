@@ -61,7 +61,7 @@ const Dashboard_body: React.FC = () => {
   return (
     <div className="app-body">
       <div className="container">
-        <div className="row gx-3 gy-4">
+        <div className="row gx-5 gy-4">
           <div className="col-12" id="col-1">
             <div className="client">
                <div className="title">
@@ -74,13 +74,25 @@ const Dashboard_body: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-5" id="col2">
+          <div className="col-6" id="col2">
             <div className="client">
                <div className="title">
                  <h1>Nombres de clients  </h1>
                  <div className="border"></div>
                </div>
-               <div className="variation mt-4 text-center"  style={{ width: '262px', height: '262px', marginLeft:'1.2rem' }}>
+               <div className="variation mt-4 text-center"  style={{ width: '262px', height: '262px', marginLeft:'15%' }}>
+                 <Doughnut data={data1} id="circle"/>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-6" id="col2">
+            <div className="client">
+               <div className="title">
+                 <h1>Nombres de clients  </h1>
+                 <div className="border"></div>
+               </div>
+               <div className="variation mt-4 text-center"   style={{ width: '262px', height: '262px', marginLeft:'15%' }}>
                  <Doughnut data={data1} id="circle"/>
               </div>
             </div>
