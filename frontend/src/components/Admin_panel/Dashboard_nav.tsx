@@ -14,7 +14,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import admin from "./../../Assets/pdp.jpg";
 
 
-const Dashboard_nav = () => {
+const Dashboard_nav:React.FC = () => {
     return (
         <div className="sidebar-wrapper" id="sidebar">
         <div className="profil text-center">

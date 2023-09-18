@@ -2,7 +2,7 @@ import React from "react";
 import couv from "./../../Assets/bg.png";
 import Typewriter, { TypewriterClass } from "typewriter-effect";
 
-const Couv = () => {
+const Couv: React.FC = () => {
   return (
     <div className="col-8">
       <div className="Couv_admin">

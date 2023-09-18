@@ -16,9 +16,9 @@ import admin from "./../Assets/pdp.jpg";
 import Dashboard_body from './Dashboard_body';
 
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
     return (
-        <div className="main-container">
+        <div className="dashboard">
 
           {/* ----------------------------dashboard nav--------------------------------------- */}
          <Dashboard_nav />
@@ -88,7 +88,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          
+
           
           {/* -----------------------dashboard body---------------------- */}
           <Dashboard_body />
