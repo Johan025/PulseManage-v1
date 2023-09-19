@@ -77,10 +77,10 @@ const Dashboard_body: React.FC = () => {
           <div className="col-6" id="col2">
             <div className="client">
                <div className="title">
-                 <h1>Nombres de clients  </h1>
+                 <h1>Répartition  départements  </h1>
                  <div className="border"></div>
                </div>
-               <div className="variation mt-4 text-center"  style={{ width: '262px', height: '262px', marginLeft:'15%' }}>
+               <div className="variation mt-4 text-center"  style={{ width: '262px', height: '262px', marginLeft:'19%' }}>
                  <Doughnut data={data1} id="circle"/>
               </div>
             </div>
