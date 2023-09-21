@@ -33,7 +33,7 @@ const Form_admin: React.FC = () => {
       .then(res=>{
               if((res.data=="valid")){
                   //history("/home",{state:{id:email}})
-                  navigate("/adminDashboard");
+                  navigate("admin/dashboard");
         
                //   history('./Home.jsx');
               }

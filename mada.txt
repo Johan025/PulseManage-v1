@@ -1,0 +1,136 @@
+export default Dashboard_body;
+
+import React from "react";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+const Navbar: React.FC = () => {
+  return (
+    <div className="nav">
+      <div className="nav_primary">
+           
+      </div>
+
+      <div className="nav_secondary">
+        <div className="logo"></div>
+
+       
+
+        <div className="nav_toggle">
+          <ul className="d-flex m-4">
+            <li><a href="">HOME</a></li>
+            <li><a href="">OUR TOURS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div className="version text-end">
+              <h1>EN</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
+
+.nav{
+
+       &_primary{
+             width:100%;
+             height: 3rem;
+             background-color: $secondary; 
+       }
+
+       &_secondary{
+        width:100%;
+        height: 5rem;
+        background-color: beige;
+       }
+
+       &_toggle{
+         float: right;
+         justify-content: space-between;
+         align-items: center;
+         margin-right: 8%;
+         margin-top: 0.4rem;
+
+          ul{
+             gap: 40px;
+          
+             
+
+                li{
+                    text-transform: capitalize;
+
+                      a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $color2;
+                        text-transform: capitalize;
+                      }
+
+                }
+
+          }
+
+       }
+
+       .version{
+        float: right;
+        position: relative;
+        left: 37.5%;
+        top: 1.95rem;
+          
+           h1{
+              font-size: 16px;
+              font-weight: bold;
+              color: $color2;
+           }
+       }
+}
+
+$primary: #146CDF;
+$color1: #fff;
+
+@mixin screen($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 767px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == medium {
+      @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == large {
+      @media (min-width: 1024px) {
+        @content;
+      }
+    }
+  }
+
+  *{
+    font-family: 'Mooli';
+    list-style: none;
+    text-decoration: none;
+
+  }
+
+  html::-webkit-scrollbar {
+    background-color: white;
+    width: 7px;
+    scrollbar-width: thin;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 44, 44, 0.555);
+    height: -5px;
+    width: 6px;
+    border-radius: 10px;
+  }
+
+
+

@@ -11,9 +11,9 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faBox } from "@fortawesome/free-solid-svg-icons";
 import { faSitemap } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import Dashboard_nav from "./Dashboard_nav";
+import Dashboard_nav from "../../components/Admin_panel/Dashboard_nav";
 import admin from "./../Assets/pdp.jpg";
-import Dashboard_body from './Dashboard_body';
+import Dashboard_body from '../../components/Admin_panel/Dashboard_body';
 
 
 const Dashboard: React.FC = () => {
@@ -65,7 +65,7 @@ const Dashboard: React.FC = () => {
                 <div className="box d-flex" id="box3">
                   <div className="box_content">
                       <p>Branches</p>
-                      <h3>13</h3>
+                      <h3>7</h3>
                     </div>
 
                     <div className="box_icones">

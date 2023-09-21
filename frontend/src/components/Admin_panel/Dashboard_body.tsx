@@ -23,7 +23,7 @@ ChartJS.register(
 );
 
 const Dashboard_body: React.FC = () => {
-  const labels = ["Janvier", "Fevrier","Mars","Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre"];
+  const labels = ["Janvier", "Fevrier","Mars","Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre","Octobre"];
   const [data, setData] = useState({
     labels: labels,
     datasets: [
@@ -40,17 +40,51 @@ const Dashboard_body: React.FC = () => {
 
   const [data1, setData1] = useState({
     labels: [
-      'Tech lead',
-      'Blue',
-      'Yellow'
+      'Production',
+      'Marketing',
+      'Ventes',
+      'Logistique',
+      'Ressources humaines',
+      'Finances et comptabilités',
+      'Recherche'
     ],
     datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
+      label: "Nombre d' employés",
+      data: [30, 50, 20,30,40,50,60],
       backgroundColor: [
         'rgb(255, 99, 132)',
         'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        'rgb(255, 205, 86)',
+        'rgb(81, 128, 7)',
+        'rgb(80, 7, 128)',
+        'rgb(10, 153, 146)',
+        'rgb(199, 53, 155)'
+      ],
+      hoverOffset: 4
+    }]
+  });
+
+  const [data2, setData2] = useState({
+    labels: [
+      'Production',
+      'Marketing',
+      'Ventes',
+      'Logistique',
+      'Ressources humaines',
+      'Finances et comptabilités',
+      'Recherche'
+    ],
+    datasets: [{
+      label: "Nombre d' employés",
+      data: [30, 70, 80,30,40,100,80],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(81, 128, 7)',
+        'rgb(80, 7, 128)',
+        'rgb(10, 153, 146)',
+        'rgb(199, 53, 155)'
       ],
       hoverOffset: 4
     }]
@@ -80,8 +114,8 @@ const Dashboard_body: React.FC = () => {
                  <h1>Répartition  départements  </h1>
                  <div className="border"></div>
                </div>
-               <div className="variation mt-4 text-center"  style={{ width: '262px', height: '262px', marginLeft:'19%' }}>
-                 <Doughnut data={data1} id="circle"/>
+               <div className="variation mt-4 text-center d-flex justify-content-center"  style={{ width: '322px', height: '322px', marginLeft:'4vw' }}>
+                 <Doughnut data={data1} className="text-center" id="circle"/>
               </div>
             </div>
           </div>
@@ -92,8 +126,8 @@ const Dashboard_body: React.FC = () => {
                  <h1>Nombres de clients  </h1>
                  <div className="border"></div>
                </div>
-               <div className="variation mt-4 text-center"   style={{ width: '262px', height: '262px', marginLeft:'15%' }}>
-                 <Doughnut data={data1} id="circle"/>
+               <div className="variation mt-4 text-center"  style={{ width: '322px', height: '322px',marginLeft:'4vw' }}>
+                 <Doughnut data={data2} id="circle"/>
               </div>
             </div>
           </div>
@@ -104,3 +138,4 @@ const Dashboard_body: React.FC = () => {
 };
 
 export default Dashboard_body;
+
