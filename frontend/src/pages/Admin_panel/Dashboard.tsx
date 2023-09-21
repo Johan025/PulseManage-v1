@@ -53,7 +53,7 @@ const Dashboard: React.FC = () => {
                   <div className="box d-flex" id="box2">
                     <div className="box_content">
                       <p>Clients</p>
-                      <h3>455</h3>
+                      <h3>5</h3>
                     </div>
 
                     <div className="box_icones">

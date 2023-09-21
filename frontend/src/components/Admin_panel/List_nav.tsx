@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
@@ -14,37 +14,38 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import admin from "./../../Assets/pdp.jpg";
 import { Link } from "react-router-dom";
 
-const Dashboard_nav: React.FC = () => {
-  return (
-    <div className="sidebar-wrapper" id="sidebar">
-      <div className="profil text-center">
-        <div className="profil_image">
-          <img src={admin} alt="" />
+
+const List_nav:React.FC = () => {
+    return (
+        <div className="sidebar-wrapper" id="sidebar">
+        <div className="profil text-center">
+          <div className="profil_image">
+            <img src={admin} alt="" />
+          </div>
+
+          <div className="profil_contents">
+            <h1>PulseManage</h1>
+            <h2>Administrateur</h2>
+          </div>
+
+          <div className="profil_icons">
+            <FontAwesomeIcon icon={faCalendar} className="icone" />
+            <FontAwesomeIcon icon={faBullhorn} className="icone" />
+            <FontAwesomeIcon icon={faComment} className="icone" />
+          </div>
         </div>
 
-        <div className="profil_contents">
-          <h1>PulseManage</h1>
-          <h2>Administrateur</h2>
-        </div>
-
-        <div className="profil_icons">
-          <FontAwesomeIcon icon={faCalendar} className="icone" />
-          <FontAwesomeIcon icon={faBullhorn} className="icone" />
-          <FontAwesomeIcon icon={faComment} className="icone" />
-        </div>
-      </div>
-
-      <div className="sidebar_content text-start">
+        <div className="sidebar_content text-start">
         <ul className="te">
         <Link to="/admin/dashboard" className="a">
-          <li className="active">
+          <li >
             <FontAwesomeIcon icon={faGauge} className="icon" />{" "}
             <h1> Dashboard</h1>
           </li>
           </Link>
 
           <Link to="/admin/list" className="a">
-            <li>
+            <li className="active">
               <FontAwesomeIcon icon={faUsers} className="icon" />{" "}
               <h1>Liste employés</h1>
             </li>
@@ -78,9 +79,9 @@ const Dashboard_nav: React.FC = () => {
           </Link>
           <li></li>
         </ul>
+        </div>
       </div>
-    </div>
-  );
+    );
 };
 
-export default Dashboard_nav;
+export default List_nav;

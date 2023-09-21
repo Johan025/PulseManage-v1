@@ -114,6 +114,16 @@ const Dashboard_body: React.FC = () => {
     ],
   });
 
+  const options = {
+    scales: {
+      y: {
+        beginAtZero: true,
+        stepSize: 15, // Définissez l'intervalle de 15
+      },
+    },
+  };
+
+
   return (
     <div className="app-body">
       <div className="container">
@@ -126,7 +136,7 @@ const Dashboard_body: React.FC = () => {
               </div>
               <div className="variation" style={{ width: '100%' }}>
               <div style={{ height: '450px' }}>
-                <Bar data={data} id="bar"/>
+                <Bar data={data} id="bar" options={options}/>
                 </div>
                 
               </div>
